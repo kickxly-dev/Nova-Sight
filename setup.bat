@@ -54,7 +54,7 @@ echo  [OK] CMake found.
 :: ── 3. Configure ─────────────────────────────────────────────────────────────
 echo.
 echo  Configuring build...
-cmake -B build -DCMAKE_TOOLCHAIN_FILE="%VCPKG_ROOT%\scripts\buildsystems\vcpkg.cmake" -DCMAKE_BUILD_TYPE=Release
+cmake -B build -G "Visual Studio 17 2022" -A x64 -DCMAKE_TOOLCHAIN_FILE="%VCPKG_ROOT%\scripts\buildsystems\vcpkg.cmake"
 if errorlevel 1 (
     echo.
     echo  [ERROR] CMake configuration failed.
