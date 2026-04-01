@@ -1,0 +1,36 @@
+# Build output
+build/
+out/
+*.exe
+*.pdb
+*.ilk
+*.obj
+*.lib
+*.exp
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+install_manifest.txt
+CPackConfig.cmake
+CPackSourceConfig.cmake
+
+# vcpkg
+vcpkg_installed/
+
+# IDE
+.vs/
+*.user
+*.suo
+*.VC.db
+*.VC.opendb
+.vscode/
+
+# Clangd / compile commands
+compile_commands.json
+.clangd/
+
+# Credentials — never commit your API key
+*.env

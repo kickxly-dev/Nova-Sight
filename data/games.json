@@ -1,0 +1,51 @@
+{
+    "groq_api_key": "",
+    "groq_model": "llama3-8b-8192",
+    "games": [
+        {
+            "name": "League of Legends",
+            "process": "League of Legends.exe",
+            "regions": [
+                { "label": "kills",   "x": 635, "y": 27, "w": 25, "h": 16 },
+                { "label": "deaths",  "x": 659, "y": 27, "w": 25, "h": 16 },
+                { "label": "assists", "x": 683, "y": 27, "w": 25, "h": 16 },
+                { "label": "cs",      "x": 720, "y": 27, "w": 40, "h": 16 },
+                { "label": "gold",    "x": 775, "y": 27, "w": 55, "h": 16 }
+            ]
+        },
+        {
+            "name": "Valorant",
+            "process": "VALORANT-Win64-Shipping.exe",
+            "regions": [
+                { "label": "kills",  "x": 750, "y": 575, "w": 45, "h": 22 },
+                { "label": "deaths", "x": 810, "y": 575, "w": 45, "h": 22 },
+                { "label": "score",  "x": 870, "y": 575, "w": 45, "h": 22 }
+            ]
+        },
+        {
+            "name": "Counter-Strike 2",
+            "process": "cs2.exe",
+            "regions": [
+                { "label": "kills",  "x": 760, "y": 925, "w": 55, "h": 26 },
+                { "label": "deaths", "x": 855, "y": 925, "w": 55, "h": 26 },
+                { "label": "score",  "x": 905, "y": 925, "w": 55, "h": 26 }
+            ]
+        },
+        {
+            "name": "Apex Legends",
+            "process": "r5apex.exe",
+            "regions": [
+                { "label": "kills",  "x": 50,  "y": 935, "w": 65, "h": 26 },
+                { "label": "damage", "x": 50,  "y": 960, "w": 85, "h": 26 }
+            ]
+        },
+        {
+            "name": "Overwatch 2",
+            "process": "Overwatch.exe",
+            "regions": [
+                { "label": "eliminations", "x": 755, "y": 945, "w": 60, "h": 24 },
+                { "label": "deaths",       "x": 845, "y": 945, "w": 60, "h": 24 }
+            ]
+        }
+    ]
+}
