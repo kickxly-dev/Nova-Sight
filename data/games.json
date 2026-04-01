@@ -48,11 +48,11 @@
             ]
         },
         {
-            "name": "Roblox",
+            "name": "Roblox - Arsenal",
             "process": "RobloxPlayerBeta.exe",
             "regions": [
-                { "label": "health", "x": 60,  "y": 1010, "w": 80, "h": 22 },
-                { "label": "score",  "x": 880, "y": 25,   "w": 80, "h": 22 }
+                { "label": "kills",  "x": 910, "y": 1042, "w": 55, "h": 22 },
+                { "label": "health", "x": 820, "y": 1022, "w": 80, "h": 20 }
             ]
         }
     ]
