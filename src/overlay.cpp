@@ -61,7 +61,7 @@ bool Overlay::init() {
     wc.lpfnWndProc   = WndProc;
     wc.hInstance     = m_hInstance;
     wc.lpszClassName = CLASS_NAME;
-    wc.hCursor       = LoadCursorW(nullptr, IDC_ARROW);
+    wc.hCursor       = LoadCursor(nullptr, IDC_ARROW);
     RegisterClassExW(&wc);
 
     const int screenW = GetSystemMetrics(SM_CXSCREEN);
@@ -353,8 +353,8 @@ LRESULT Overlay::handleMessage(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam
             POINT pt = {GET_X_LPARAM(lParam), GET_Y_LPARAM(lParam)};
             const int screenW = GetSystemMetrics(SM_CXSCREEN);
             const int screenH = GetSystemMetrics(SM_CYSCREEN);
-            m_panelX = std::clamp(pt.x - m_dragOffset.x, 0, screenW - m_panelW);
-            m_panelY = std::clamp(pt.y - m_dragOffset.y, 0, screenH - m_panelH);
+            m_panelX = std::clamp((int)(pt.x - m_dragOffset.x), 0, screenW - m_panelW);
+            m_panelY = std::clamp((int)(pt.y - m_dragOffset.y), 0, screenH - m_panelH);
             render();
         }
         return 0;
